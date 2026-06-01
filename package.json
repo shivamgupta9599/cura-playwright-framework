@@ -1,0 +1,22 @@
+{
+  "name": "cura-playwright-framework",
+  "version": "1.0.0",
+  "description": "Industry-style Playwright UI automation framework for the CURA Healthcare demo application.",
+  "private": true,
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "test:ui": "playwright test --ui",
+    "test:smoke": "playwright test --grep @smoke",
+    "report": "playwright show-report",
+    "codegen": "playwright codegen",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.52.0",
+    "@types/node": "^25.9.1",
+    "dotenv": "^16.4.7",
+    "typescript": "^5.8.3"
+  }
+}
